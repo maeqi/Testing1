@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Testing</string>
+    <string name="schedule_management">Schedule Management</string>
+    <string-array name="gender">
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+
+    <string-array name="membertype">
+        <item>None</item>
+        <item>Silver</item>
+        <item>Gold</item>
+        <item>Platinum</item>
+    </string-array>
+</resources>

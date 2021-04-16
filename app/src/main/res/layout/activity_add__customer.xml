@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCustomer">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/lobster"
+            android:text="Skyzen Hotel"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="2dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/profileicon" />
+
+        <Spinner
+            android:id="@+id/gender"
+            style="@android:style/Widget.Material.Spinner.Underlined"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginRight="10dp"
+            android:entries="@array/gender"
+            android:spinnerMode="dropdown"
+            tools:ignore="NewApi" />
+
+        <Button
+            android:id="@+id/pickDateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="490dp"
+            android:text="Pick Date" />
+
+        <TextView
+            android:id="@+id/dateTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="500dp"
+            android:layout_marginEnd="160dp"
+            android:layout_marginRight="160dp"
+            android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+            android:text="Date of Birth"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/membertype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Member Type :"
+            android:textSize="18sp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="560dp"
+            android:layout_marginLeft="6dp"/>
+
+        <Spinner
+            android:id="@+id/memberTypeSpinner"
+            style="@android:style/Widget.Material.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="550dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:entries="@array/membertype"
+            android:spinnerMode="dropdown"
+            tools:ignore="NewApi" />
+
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="700dp"
+            android:layout_marginBottom="49dp"
+            android:text="Create"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="200dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="700dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="49dp"
+            android:text="Cancel" />
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/CustName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="130dp"
+        android:layout_marginBottom="650dp"
+        android:hint="Name"
+        app:helperText="Required*"
+        app:helperTextTextColor="#ff0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/ic_baseline_person_24">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="62dp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/CustAge"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="155dp"
+        android:layout_marginEnd="220dp"
+        android:layout_marginRight="130dp"
+        android:layout_marginBottom="590dp"
+        android:hint="Age"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/CustICPassport"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="130dp"
+        android:layout_marginBottom="500dp"
+        android:hint="IC/Passport"
+        app:helperText="Required*"
+        app:helperTextTextColor="#ff0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/ic_baseline_person_24">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="62dp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/CustphoneNo"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="130dp"
+        android:layout_marginBottom="400dp"
+        android:hint="Phone No."
+        app:helperText="Required*"
+        app:helperTextTextColor="#ff0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/ic_baseline_phone_24">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="62dp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/CustEmail"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="130dp"
+        android:layout_marginBottom="320dp"
+        android:hint="Email"
+        app:helperText="Required*"
+        app:helperTextTextColor="#ff0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/ic_baseline_email_24">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="62dp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
